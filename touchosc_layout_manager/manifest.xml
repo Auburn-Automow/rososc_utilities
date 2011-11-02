@@ -1,0 +1,17 @@
+<package>
+  <description brief="touchosc_layout_manager">
+
+     touchosc_layout_manager
+
+  </description>
+  <author>William Woodall</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/touchosc_layout_manager</url>
+  <depend package="rospy"/>
+  <depend package="roslib"/>
+  <depend package="pytouchosc"/>
+
+</package>
+
+
