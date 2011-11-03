@@ -11,6 +11,8 @@
   <depend package="rospy"/>
   <depend package="roslib"/>
   <depend package="pytouchosc"/>
+  
+  <rosdep name="python-pyside" />
 
 </package>
 

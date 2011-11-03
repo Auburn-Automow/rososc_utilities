@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+
+"""
+This app provides a GUI for managing the tabs in touchosc layouts.
+"""
+
+import sys, os
+
+from logging import info, warning, error
+
+def main():
+    pass
+
+if __name__ == '__main__':
+    main()
