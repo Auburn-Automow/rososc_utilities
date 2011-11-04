@@ -8,8 +8,21 @@ import sys, os
 
 from logging import info, warning, error
 
-def main():
-    pass
+from PySide import QtCore, QtGui
+
+try:
+    import roslib; roslib.load_manifest('touchosc_layout_manager')
+    import touchosc_layout_manager.touchosclayoutmanagerwindow as tosclmw
+except Exception:
+    warning('Couldn\'t import roslib, trying to workaround', exc_info=1)
+    new_path = os.path.dirname(os.path.realpath(__file__))
+    sys.path.append(os.path.abspath(os.path.join(new_path, "../src")))
+    import touchosc_layout_manager.touchosclayoutmanagerwindow as tosclmw
 
 if __name__ == '__main__':
-    main()
+    app = QtGui.QApplication(sys.argv)
+    
+    manager_window = tosclmw.TouchOSCLayoutManagerWindow()
+    manager_window.show()
+    
+    sys.exit(app.exec_())

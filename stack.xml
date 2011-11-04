@@ -5,5 +5,6 @@
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/rososc_utilities</url>
   <depend stack="rososc" />
+  <depend stack="ros_gui" />
 
 </stack>
